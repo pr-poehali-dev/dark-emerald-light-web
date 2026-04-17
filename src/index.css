@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background: 160 33% 8%;
+    --background: 160 28% 13%;
     --foreground: 120 20% 92%;
 
-    --card: 160 30% 10%;
+    --card: 160 25% 16%;
     --card-foreground: 120 20% 92%;
 
-    --popover: 160 30% 10%;
+    --popover: 160 25% 16%;
     --popover-foreground: 120 20% 92%;
 
     --primary: 150 100% 50%;
@@ -62,7 +62,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
-    background-color: #0d1f1d;
+    background-color: #162b27;
     overflow-x: hidden;
   }
 }
@@ -136,7 +136,7 @@
 
 /* Card hover effects */
 .product-card {
-  background: rgba(13, 31, 29, 0.8);
+  background: rgba(22, 43, 39, 0.8);
   border: 1px solid rgba(80, 200, 120, 0.15);
   transition: all 0.4s ease;
   backdrop-filter: blur(10px);
@@ -232,7 +232,7 @@
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d1f1d;
+  background: #162b27;
 }
 ::-webkit-scrollbar-thumb {
   background: #50c878;
@@ -241,7 +241,7 @@
 
 /* Cart sidebar */
 .cart-sidebar {
-  background: linear-gradient(180deg, #0d1f1d 0%, #111a18 100%);
+  background: linear-gradient(180deg, #162b27 0%, #1c3530 100%);
   border-left: 1px solid rgba(80, 200, 120, 0.2);
 }
 
@@ -271,7 +271,7 @@
 
 /* Mobile menu */
 .mobile-menu {
-  background: rgba(13, 31, 29, 0.98);
+  background: rgba(22, 43, 39, 0.98);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(80, 200, 120, 0.15);
 }

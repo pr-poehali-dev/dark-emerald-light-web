@@ -108,7 +108,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#0D1F1D", color: "#e8f5ee" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#162B27", color: "#e8f5ee" }}>
       {/* Noise overlay */}
       <div className="noise-overlay" />
 
@@ -116,7 +116,7 @@ export default function Index() {
       <header
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: scrollY > 60 ? "rgba(13,31,29,0.95)" : "transparent",
+          background: scrollY > 60 ? "rgba(22,43,39,0.95)" : "transparent",
           backdropFilter: scrollY > 60 ? "blur(20px)" : "none",
           borderBottom: scrollY > 60 ? "1px solid rgba(80,200,120,0.12)" : "none",
         }}
@@ -166,7 +166,7 @@ export default function Index() {
               {totalItems > 0 && (
                 <span
                   className="absolute -top-1 -right-1 text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold"
-                  style={{ background: "#00FF7F", color: "#0D1F1D" }}
+                  style={{ background: "#00FF7F", color: "#162B27" }}
                 >
                   {totalItems}
                 </span>
@@ -213,11 +213,11 @@ export default function Index() {
             src={CAT_IMG}
             alt="Чёрная кошка в туманном лесу"
             className="w-full h-full object-cover"
-            style={{ filter: "brightness(0.45) saturate(0.8)" }}
+            style={{ filter: "brightness(0.6) saturate(0.85)" }}
           />
         </div>
 
-        <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(13,31,29,0.3) 0%, rgba(13,31,29,0.05) 40%, rgba(13,31,29,0.75) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(22,43,39,0.3) 0%, rgba(22,43,39,0.05) 40%, rgba(22,43,39,0.75) 100%)" }} />
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(80,200,120,0.04) 0%, transparent 70%)" }} />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -297,7 +297,7 @@ export default function Index() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     style={{ filter: "brightness(0.7) saturate(0.9)" }}
                   />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(13,31,29,0.92) 0%, transparent 60%)" }} />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(22,43,39,0.92) 0%, transparent 60%)" }} />
                   <div
                     className="absolute top-4 right-4 text-2xl font-display"
                     style={{ color: "#50C878", textShadow: "0 0 20px rgba(80,200,120,0.8)" }}
@@ -306,7 +306,7 @@ export default function Index() {
                   </div>
                   <div
                     className="absolute top-4 left-4 text-xs tracking-widest uppercase px-2 py-1"
-                    style={{ background: "rgba(13,31,29,0.85)", color: "#50C878", border: "1px solid rgba(80,200,120,0.3)" }}
+                    style={{ background: "rgba(22,43,39,0.85)", color: "#50C878", border: "1px solid rgba(80,200,120,0.3)" }}
                   >
                     {product.category}
                   </div>
@@ -344,7 +344,7 @@ export default function Index() {
               />
               <div
                 className="absolute bottom-6 left-6 right-6 p-4"
-                style={{ background: "rgba(13,31,29,0.92)", border: "1px solid rgba(80,200,120,0.2)" }}
+                style={{ background: "rgba(22,43,39,0.92)", border: "1px solid rgba(80,200,120,0.2)" }}
               >
                 <div className="font-display text-sm italic" style={{ color: "#50C878" }}>
                   «Тьма — это не отсутствие света, а его обрамление»
@@ -532,7 +532,7 @@ export default function Index() {
           >
             <div
               className="flex items-center justify-between px-6 py-5 sticky top-0"
-              style={{ background: "#0D1F1D", borderBottom: "1px solid rgba(80,200,120,0.12)", zIndex: 1 }}
+              style={{ background: "#162B27", borderBottom: "1px solid rgba(80,200,120,0.12)", zIndex: 1 }}
             >
               <div>
                 <h2 className="font-display text-2xl" style={{ color: "#e8f5ee" }}>Ваша корзина</h2>
@@ -597,7 +597,7 @@ export default function Index() {
             {cart.length > 0 && (
               <div
                 className="px-6 py-5 sticky bottom-0"
-                style={{ background: "#0D1F1D", borderTop: "1px solid rgba(80,200,120,0.12)" }}
+                style={{ background: "#162B27", borderTop: "1px solid rgba(80,200,120,0.12)" }}
               >
                 <div className="flex justify-between items-center mb-4">
                   <span style={{ color: "rgba(232,245,238,0.55)" }}>Итого:</span>
@@ -627,7 +627,7 @@ export default function Index() {
           />
           <div
             className="relative w-full max-w-lg rounded-sm animate-fade-in"
-            style={{ background: "#0D1F1D", border: "1px solid rgba(80,200,120,0.25)", maxHeight: "90vh", overflowY: "auto" }}
+            style={{ background: "#162B27", border: "1px solid rgba(80,200,120,0.25)", maxHeight: "90vh", overflowY: "auto" }}
           >
             {orderDone ? (
               <div className="text-center py-16 px-8">
